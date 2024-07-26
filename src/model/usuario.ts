@@ -8,6 +8,7 @@ direccion: String dirección de envío del usuario
 historialPedidos: lista de pedidos realizados por el usuario
 
 */
+import { Pedido } from "./pedido";
  export class Usuario {
     constructor(
         public id: number,
@@ -15,6 +16,6 @@ historialPedidos: lista de pedidos realizados por el usuario
         public correoElectronico: string,
         public contrasena: string,
         public direccion: string,
-        public historialPedidos: string 
+        public historialPedidos: Pedido[] 
     ) {    }
 }
